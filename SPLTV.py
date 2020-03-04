@@ -18,18 +18,12 @@ D = np.array([[a1,b1,c1],[a2,b2,c2],[a3,b3,c3]])
 Dx = np.array([[d1,b1,c1],[d2,b2,c2],[d3,b3,c3]])
 Dy = np.array([[a1,d1,c1],[a2,d2,c2],[a3,d3,c3]])
 Dz = np.array([[a1,b1,d1],[a2,b2,d2],[a3,b3,d3]])
-print(D)
-print(Dx)
-print(Dy)
-print(Dz)
+
 det = np.linalg.det(D)
 det1 = np.linalg.det(Dx)
 det2 = np.linalg.det(Dy)
 det3 = np.linalg.det(Dz)
-print(det)
-print(det1)
-print(det2)
-print(det3)
+
 x = det1/det
 y = det2/det
 z = det3/det

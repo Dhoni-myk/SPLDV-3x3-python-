@@ -1,0 +1,18 @@
+import numpy as np
+print('masukkan nilai dengan "a1X + b1Y= C1 dan a2X + b1Y = C2') 
+a1 = float(input('Masukkan nilai a1= '  ))
+b1 = float(input('Masukkan nilai b1= '  ))
+c1 = float(input('Masukkan nilai c1= '  ))
+a2 = float(input('Masukkan nilai a2= '  ))
+b2 = float(input('Masukkan nilai b2= '  ))
+c2 = float(input('Masukkan nilai c2= '  ))
+a = np.array ([[a1,b1],[a2,b2]])
+b = np.array ([c1,c2])
+aa= np.linalg.inv(a)
+print(a)
+a4= np.linalg.det(a)
+print(a4)
+bb = a4*b
+print(bb)
+hasil= np.linalg.solve(a,b)
+print ('hasil',hasil)
